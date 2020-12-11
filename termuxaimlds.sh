@@ -72,7 +72,7 @@ pkg install man help2man doxygen ncurses-utils make cmake autoconf automake valg
 pkg upgrade && pkg update -y
 pkg install boost clang llvm ctags -y
 pkg upgrade && pkg update -y
-pkg install patch m4 gcc-10 vim kakoune python golang erlang elixir rust autoconf c-ares libicu ccnet net-tools netcat netsed nmap roc sdl-net tracepath tshark tsocks wavemon wpa-supplicant tigervnc nodejs-lts yarn jhead jp2a libexpat libexpat-static libjasper libjasper-utils libjpeg-turbo libjpeg-turbo-progs libjpeg-turbo-static openjpeg openjpeg-tools libgfortran5 libgfortran5-9 libpng libpng-static libxml2 libxml2-static libxml2-utils libexpat docbook-xml docbook-xsl html-xml-utils xmake xmlsec xmlsec-static git termux-elf-cleaner perl weechat-perl-plugin openvpn openssl openssl-static openssl-tool lynx elinks python-tkinter python-static xfce4 netsurf xfce4-terminal openbox pypanel xorg-xsetroot ripgrep -y
+pkg install patch m4 gcc-10 vim kakoune python golang erlang elixir rust autoconf c-ares libicu ccnet net-tools netcat netsed nmap openssh roc sdl-net tracepath tshark tsocks wavemon wpa-supplicant tigervnc nodejs-lts yarn jhead jp2a libexpat libexpat-static libjasper libjasper-utils libjpeg-turbo libjpeg-turbo-progs libjpeg-turbo-static openjpeg openjpeg-tools libgfortran5 libgfortran5-9 libpng libpng-static libxml2 libxml2-static libxml2-utils libexpat docbook-xml docbook-xsl html-xml-utils xmake xmlsec xmlsec-static git termux-elf-cleaner perl weechat-perl-plugin openvpn openssl openssl-static openssl-tool lynx elinks python-tkinter python-static xfce4 netsurf xfce4-terminal openbox pypanel xorg-xsetroot ripgrep -y
 pkg upgrade && pkg update -y
 echo -e "${BIGreen}Install Complete";
 echo "";

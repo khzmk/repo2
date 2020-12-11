@@ -68,7 +68,7 @@ pkg upgrade && pkg update -y
 echo "";
 
 echo -e "${BICyan}Installing Pre-Req System Packages and Dependencies";
-pkg install man help2man doxygen ncurses-utils make cmake autoconf automake valgrind texinfo bison flex -y
+pkg install man help2man doxygen ncurses-utils make cmake autoconf automake valgrind texinfo bison build-essential flex -y
 pkg upgrade && pkg update -y
 pkg install boost clang llvm ctags -y
 pkg upgrade && pkg update -y

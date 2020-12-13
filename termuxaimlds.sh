@@ -68,11 +68,11 @@ pkg upgrade && pkg update -y
 echo "";
 
 echo -e "${BICyan}Installing Pre-Req System Packages and Dependencies";
-pkg install man help2man doxygen ncurses-utils make cmake autoconf automake valgrind texinfo bison build-essential flex -y
+pkg install man help2man doxygen ncurses-utils make cmake autoconf automake valgrind texinfo bison flex -y
 pkg upgrade && pkg update -y
 pkg install boost clang llvm ctags -y
 pkg upgrade && pkg update -y
-pkg install patch m4 gcc-10 vim kakoune python golang erlang elixir rust autoconf c-ares libicu ccnet net-tools netcat netsed nmap openssh roc sdl-net tracepath tshark tsocks wavemon wpa-supplicant tigervnc nodejs-lts yarn jhead jp2a libexpat libexpat-static libjasper libjasper-utils libjpeg-turbo libjpeg-turbo-progs libjpeg-turbo-static openjpeg openjpeg-tools libgfortran5 libgfortran5-9 libpng libpng-static libxml2 libxml2-static libxml2-utils libexpat docbook-xml docbook-xsl html-xml-utils xmake xmlsec xmlsec-static git termux-elf-cleaner perl weechat-perl-plugin openvpn openssl openssl-static openssl-tool lynx elinks python-tkinter python-static xfce4 netsurf xfce4-terminal openbox pypanel xorg-xsetroot ripgrep -y
+pkg install patch m4 gcc-10 build-essential xmake ninja vim kakoune python golang erlang elixir rust autoconf c-ares libicu ccnet net-tools netcat netsed nmap roc sdl-net tracepath tshark tsocks wavemon wpa-supplicant tigervnc nodejs-lts yarn jhead jp2a libexpat libexpat-static libjasper libjasper-utils libjpeg-turbo libjpeg-turbo-progs libjpeg-turbo-static openjpeg openjpeg-tools libgfortran5 libgfortran5-9 libpng libpng-static libxml2 libxml2-static libxml2-utils libexpat docbook-xml docbook-xsl html-xml-utils xmake xmlsec xmlsec-static git termux-elf-cleaner perl weechat-perl-plugin openvpn openssl openssl-static openssl-tool lynx elinks python-tkinter python-static xfce4 netsurf xfce4-terminal openbox pypanel xorg-xsetroot ripgrep -y
 pkg upgrade && pkg update -y
 echo -e "${BIGreen}Install Complete";
 echo "";
@@ -285,13 +285,13 @@ echo -e "${BICyan}Now Installing Code-Server";
 echo -e "${BIWhite}*NOTE* You will need to configure your package.json here...";
 cd ~
 yarn init
-yarn global add coder
-yarn global add applicationinsights
-yarn global add code-server
+yarn add coder
+yarn add applicationinsights
+yarn add yauzl
+yarn add yazl
+yarn add spdlog
 yarn global add vscode
-yarn global add yauzl
-yarn global add yazl
-yarn global add spdlog
+yarn global add code-server
 yarn global add qiskit
 npm install -D
 echo -e "${BIGreen}Setup Complete"; 

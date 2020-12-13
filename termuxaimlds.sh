@@ -264,7 +264,7 @@ echo -e "${Blue}Setup Complete";
 echo "";
 
 echo -e "${BIGreen}Installing Jupyter";
-pip install -U jupyter notebook voila
+pip install -U jupyterlab notebook voila
 echo -e "${Blue}Setup Complete";
 echo "";
 
@@ -281,10 +281,15 @@ setupclang
 echo -e "${Blue}Setup Complete";
 echo "";
 
-echo -e "${BICyan}Now Installing Code-Server";
+echo -e "${BICyan}Now preparing to install Code-Server";
 echo -e "${BIWhite}*NOTE* You will need to configure your package.json here...";
 cd ~
 yarn init
+echo -e "${BIGreen}yarn init complete"; 
+echo "";
+
+echo -e "${BICyan}Installing (and reinstalling) packages for Code-Server";
+echo -e "${BIWhite}*NOTE* Right now there are issues with getting the right dependencies using just yarn, so bouncing back and forth between yarn and npm to make this work...";
 yarn add coder
 yarn add applicationinsights
 yarn add yauzl
@@ -294,6 +299,10 @@ yarn global add vscode
 yarn global add code-server
 yarn global add qiskit
 npm install -D
+npm install -D mkdirp
+npm install -D vscode
+npm install -D code-server
+npm install -D qiskit
 echo -e "${BIGreen}Setup Complete"; 
 echo -e "${BICyan}Please run code-server from your command prompt.  See README for further details";
 echo"";

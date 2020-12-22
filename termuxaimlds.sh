@@ -90,7 +90,7 @@ cd source-highlight-3.1.9
 # for x86_64 and aarch64
 ./configure --prefix=/data/data/com.termux/files/usr CXXFLAGS=-I/data/data/com.termux/files/usr/include/boost/ --with-boost-libdir=/data/data/com.termux/files/usr/lib/ --with-doxygen
 # for armvX
-#./configure --prefix=/data/data/com.termux/files/usr CXXFLAGS=-I/data/data/com.termux/files/usr/include/boost/ --with-boost-libdir=/data/data/com.termux/files/usr/lib/ LDFLAGS=-latimic YYFLAGS=-noyywrap --with-doxygen
+#./configure --prefix=/data/data/com.termux/files/usr CXXFLAGS=-I/data/data/com.termux/files/usr/include/boost/ --with-boost-libdir=/data/data/com.termux/files/usr/lib/ LDFLAGS=-latomic YYFLAGS=-noyywrap --with-doxygen
 make
 make install
 mv $PREFIX/share/source-highlight/default.lang $PREFIX/share/source-highlight/default.lang.bak
